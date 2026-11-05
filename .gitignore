@@ -1,0 +1,18 @@
+# outputs of course code
+out/
+*.png
+!**/assets/*.png
+
+# downloaded weights
+*.pt
+*.pth
+*.onnx
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macos
+.DS_Store

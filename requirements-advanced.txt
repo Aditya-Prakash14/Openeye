@@ -1,0 +1,8 @@
+# Advanced track: exercises 9-10 and the capstones
+-r requirements.txt
+torch>=2.2
+torchvision>=0.17
+transformers>=4.40
+ultralytics>=8.2        # optional: real object detection in exercise 8 / capstone 1
+gradio>=4.44            # optional: capstone 2 search UI
+streamlit>=1.36         # optional: capstone 1 dashboard

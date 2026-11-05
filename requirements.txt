@@ -1,0 +1,5 @@
+# Core track: exercises 1-8
+numpy>=1.26
+opencv-python>=4.9
+matplotlib>=3.8
+scikit-learn>=1.4
