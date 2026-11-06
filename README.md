@@ -16,6 +16,7 @@ Every exercise runs **offline by default** (synthetic data, no downloads) so not
 2. Read **Tasks**, write code, run it.
 3. Only then expand the **Solution** toggle — it has complete runnable code and notes.
 4. Every solution ends with `assert`s so you *know* your result is correct.
+5. Stuck or in a hurry? Each solution is also a standalone script in [`solutions/`](solutions/), generated from the markdown (keep them in sync with `python scripts/extract_solutions.py`).
 
 Syntax-check every code block in the course with:
 
@@ -53,7 +54,8 @@ Capstone 1 runs fully offline (synthetic scene, motion/HOG detectors). Capstone 
 Every exercise solution in this repo was executed end-to-end (macOS, Python 3.13, CPU) — each one ends in `assert`s you can re-run. Both capstone pipelines were smoke-tested: Sentinel produces events and an annotated video from its synthetic scene; Copilot's index/search plumbing was tested with a stub embedder. Re-check all code blocks any time:
 
 ```bash
-python scripts/check_solutions.py
+python scripts/check_solutions.py              # every block compiles
+python scripts/extract_solutions.py --check    # solutions/ matches the markdown
 ```
 
 ## Suggested pace (8 weeks)
